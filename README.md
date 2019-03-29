@@ -1,36 +1,9 @@
-# generator-pgc-node [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+## 使用yeoman创建项目模板
 
-## Installation
-
-First, install [Yeoman](http://yeoman.io) and generator-pgc-node using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
-
-```bash
-npm install -g yo
-npm install -g generator-pgc-node
-```
-
-Then generate your new project:
-
-```bash
-yo pgc-node
-```
-
-## Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
-
-## License
-
-MIT © [zhaohuapeng]()
-
-
-[npm-image]: https://badge.fury.io/js/generator-pgc-node.svg
-[npm-url]: https://npmjs.org/package/generator-pgc-node
-[travis-image]: https://travis-ci.org//generator-pgc-node.svg?branch=master
-[travis-url]: https://travis-ci.org//generator-pgc-node
-[daviddm-image]: https://david-dm.org//generator-pgc-node.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//generator-pgc-node
+## 模板功能
+基于配置模板和yaml配置文件生成实际项目所需的nginx和pm2配置 以便适应不同开发人员和不同环境.
+## 使用
+yo generator
+进入项目目录执行deploy.sh deploy
+deploy dev|beta|online   创建相关环境的配置
+dev online reload 创建nginx和pm2配置并启动.
