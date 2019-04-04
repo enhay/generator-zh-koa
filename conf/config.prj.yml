@@ -1,0 +1,23 @@
+common:
+  PORT: 3000
+  PRJ_NAME: "pgc"
+  DOMAIN: "pgc.huya.com"
+  PM2_LOG_DIR: "/data/logs/pm2"
+  PASS_ONLINE: ""
+  PASS_DEV: "#"
+
+dev:
+  PORT: 3001
+  ENV: "dev"
+  PM2_MODE: "fork"
+  PASS_ONLINE: "#"
+  PASS_DEV: ""
+
+beta:
+  ENV: "beta"
+  DOMAIN: "beta.pgc.huya.com"
+  PM2_MODE: "cluster"
+  
+online:
+  ENV: "online"
+  PM2_MODE: "cluster"

@@ -6,7 +6,8 @@
       "cwd": "${PRJ_ROOT}/nodeapp/",
       "exec_mode": "${PM2_MODE}",
       "${PASS_ONLINE}instances": 6,
-      "${PASS_DEV}watch": "${PRJ_ROOT}/nodeapp/",
+      "${PASS_DEV}#watch": "${PRJ_ROOT}/nodeapp/",
+      "max_restarts": 50,
       "max_memory_restart": "1G",
       "autorestart": true,
       "error_file": "${PM2_LOG_DIR}/error.log",
@@ -15,8 +16,9 @@
       "node_args": [],
       "args": [],
       "env": {
-        "NODE_ENV": "${NODE_ENV}",
-        "PORT": "${PORT}"
+        "ENV": "${ENV}",
+        "PORT": "${PORT}",
+        "DOMAIN": "${DOMAIN}"
       }
     }
   ]

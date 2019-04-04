@@ -1,12 +1,13 @@
 {
   "apps": [
     {
-      "name": "vote",
+      "name": "pgc",
       "script": "app.js",
-      "cwd": "/mnt/c/code/node/temp/nodeapp/",
+      "cwd": "/mnt/d/document/demo1/nodeapp/",
       "exec_mode": "fork",
       "#instances": 6,
-      "watch": "/mnt/c/code/node/temp/nodeapp/",
+      "#watch": "/mnt/d/document/demo1/nodeapp/",
+      "max_restarts": 50,
       "max_memory_restart": "1G",
       "autorestart": true,
       "error_file": "/data/logs/pm2/error.log",
@@ -15,8 +16,9 @@
       "node_args": [],
       "args": [],
       "env": {
-        "NODE_ENV": "dev",
-        "PORT": "3000"
+        "ENV": "dev",
+        "PORT": "3001",
+        "DOMAIN": "zhaohua.pgc.huya.com"
       }
     }
   ]
